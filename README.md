@@ -16,7 +16,6 @@ pages[2]
 ...
 pages[C]
 
-text
 
 - First line: number of chapters **C** and number of volumes **B**  
   (3 ≤ B ≤ 40, B ≤ C ≤ 250, total pages ≤ 3×10⁴)
@@ -29,7 +28,6 @@ l2 r2
 ...
 lB rB
 
-text
 
 - First line: minimum possible maximum volume thickness
 - Next B lines: start and end chapter indices for each volume (1-indexed)
@@ -44,7 +42,6 @@ text
 300
 300
 
-text
 
 **Output:**
 600
@@ -52,7 +49,6 @@ text
 3 3
 4 5
 
-text
 
 **Explanation:**
 - Volume 1: chapters 1-2 (300 + 300 = 600 pages)
@@ -81,7 +77,6 @@ Iterative bottom-up approach. Uses `dp` and `cut` arrays:
 **Recurrence Relation:**
 dp[i][j] = min_{k = j-1 to i-1} max(dp[k][j-1], sum(pages[k+1..i]))
 
-text
 
 ### 2. Dynamic Programming (Memoization) — `solution_dp_memoization.py`
 
