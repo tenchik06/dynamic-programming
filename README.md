@@ -94,22 +94,5 @@ Simple recursive implementation without optimization. Computes `f(C, B)` directl
 | Memoization | O(C² × B) | O(C × B) |
 | Pure Recursion | O(B × Cᴮ) | O(B) |
 
-## How to Run
-
-```bash
-# Any of the three solutions
-python solution_dp_tabular.py
-
-# With input redirection from a file
-python solution_dp_tabular.py < input.txt
-Applications
-Optimal distribution of printing jobs
-
-Load balancing in parallel computing
-
-Splitting large datasets for batch processing
-
-Scheduling problems minimizing maximum load
-
 Year
 2026
